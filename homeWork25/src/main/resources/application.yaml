@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/home_work_25
+    username: root
+    password: Sekret
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+
+logging:
+  level:
+    com.org.com.org.homeWork25: INFO
+    org.springframework.web: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{25} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{25} - %msg%n"
+  file:
+    name: appLogs.log

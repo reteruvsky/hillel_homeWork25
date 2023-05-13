@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceImpl {
     @Autowired
     private OrderRepository orderRepository;
 
